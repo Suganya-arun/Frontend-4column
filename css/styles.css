@@ -1,0 +1,125 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+   background-color: white;
+   text-align:center;
+}
+p{
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+h1{
+    font-size: 1.75em;
+}
+.header{
+    text-align: center;
+    width:500px;
+margin:auto;
+}
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+align-items: center;
+  gap:20px;
+  padding:10px;
+}
+.card
+{
+    width:300px;
+    border:1px solid transparent;
+    text-align: left;
+    padding:20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.card-1
+{
+    border-top-width: 5px;
+    border-top-color: hsl(180, 62%, 55%);
+}
+.card-2
+{
+    border-top-width: 5px;
+    border-top-color: hsl(0, 78%, 62%);
+}
+.card-3
+{
+    border-top-width: 5px;
+    border-top-color:  hsl(34, 97%, 64%);
+}
+.card-4
+{
+    border-top-width: 5px;
+    border-top-color: hsl(212, 86%, 64%);
+}
+.image
+{
+    text-align: right;
+    padding:20px;
+}
+.header-para
+{
+    padding:0  0 50px 0;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (min-width:600px)
+{
+.main-container
+{
+    display:grid;
+    /* width:1200px; */
+    grid-template-columns: auto auto auto auto;
+    justify-content:center;
+    margin:auto;
+    position: relative;
+}
+.card-1
+{
+    border-top-width: 5px;
+    border-top-color: hsl(180, 62%, 55%);
+grid-row-start: 2;
+    
+}
+.card-2
+{
+position: relative;
+top: 150px;
+    border-top-width: 5px;
+    border-top-color: hsl(0, 78%, 62%);
+    grid-column-start: 2;
+}
+.card-3
+{
+    position: relative;
+    border-top-width: 5px;
+    border-top-color:  hsl(34, 97%, 64%);
+    grid-column-start: 2;
+    top:150px;
+}
+.card-4
+{
+    border-top-width: 5px;
+    border-top-color: hsl(212, 86%, 64%);
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+.image
+{
+    text-align: right;
+    padding:20px;
+}
+.header-para
+{
+    padding:0 ;
+}
+footer{
+    margin-top: 300px;
+}
+}
